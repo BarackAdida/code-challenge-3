@@ -37,7 +37,7 @@ As a user, I can:
    showtime, and available tickets** when the page loads. The number of
    available tickets will need to be derived by subtracting the number of
    `tickets_sold` from the theater's `capacity`. You will need to make a GET
-   request to the following endpoint to retrieve the film data:
+   request to the following endpoint to retrieve the film info:
 
    ```json
    GET /films/1
@@ -62,7 +62,7 @@ As a user, I can:
    feel free to remove that element by editing the HTML file directly, or use
    JavaScript to remove the placeholder element before populating the list. You
    will need to make a GET request to the following endpoint to retrieve the
-   film data:
+   film info:
 
    ```json
    GET /films
@@ -127,7 +127,7 @@ As a user, I can:
          "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
       }
       ```
-      - POST the new ticket to the tickets endpoint in the database
+      - POST the new ticket to the tickets endpoint in the infobase
       ```json
       POST /tickets
       Request Body: {
